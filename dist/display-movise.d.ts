@@ -1,0 +1,12 @@
+declare const filesJsonAllDisplayMovise: string[];
+declare const fetchDataAllJsonDisplayMovise: () => Promise<unknown>;
+declare const urlParam: URLSearchParams;
+declare function shuffleArrayDisplayMovise(array: any[]): any[];
+declare function savepost(postTitle: any): any;
+declare function unsavedpost(postTitle: any): any;
+declare const body_movise: HTMLDivElement;
+declare const loadCircleDisplayMovise: HTMLDivElement;
+declare const circleDisplayMovise: HTMLSpanElement;
+declare function getBodyMovise(): Promise<void>;
+declare const recommended_list: HTMLDivElement;
+declare function getRecommendedList(): Promise<void>;

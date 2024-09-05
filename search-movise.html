@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- favicon -->
+        <link rel="icon" href="./src/assets/image/favicon.png">
+        <!-- meta tags -->
+        <title>U-NEXT | Search Movise</title>
+        <meta name="title" content="U-NEXT: You can enjoy a vast selection of Movies and Dramas with just one U-NEXT device.">
+        <meta name="description" content="You can enjoy a vast selection of Movies and Dramas with just one U-NEXT device, offering endless entertainment right at your fingertips.">
+        <meta name="keywords" content="HTML, CSS, JS, TS, JSON, FETCH API">
+        <meta name="author" content="Mohamed Yasser">
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" 
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+        rel="stylesheet">
+        <!-- custom cdnjs link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        <!-- custom css link -->
+        <link rel="stylesheet" href="./src/assets/css/styles.css">
+    </head>
+    <body>
+        <!-- #OVERFLOW -->
+        <div class="overflow" data-overflow></div>
+
+        <!-- #HEADER -->
+        <header class="header" data-header>
+            <div class="container">
+                <button class="icon-header label-large" data-open-aside>
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <a href="index.html" class="logo display-small">U - NEXT</a>
+
+                <a href="search-genre.html" class="input-search-header">
+                    <input type="text" placeholder="Search" class="search-header label-small">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+
+                <a href="search-genre.html" class="icon-header label-large">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+        </header>
+
+        <!-- #ASIDE -->
+        <aside class="aside" data-aside>
+            <div class="aside-header">
+                <button class="show-aside body-large" data-close-aside><i class="fa-solid fa-xmark"></i></button>
+
+                <a href="index.html" class="logo display-small">U - NEXT</a>
+            </div>
+
+            <div class="btn-list">
+                <a href="https://github.com/the-artist-web" target="_blank" class="btn-primary btn-aside label-medium"><i class="fa-brands fa-github label-large"></i> githun me</a>
+                <a href="https://www.linkedin.com/in/the-artists-web/" target="_blank" class="btn-secondary btn-aside label-medium"><i class="fa-brands fa-linkedin label-large"></i> LinkedIn me</a>
+            </div>
+
+            <ul class="aside-list">
+                <li class="aside-item">
+                    <a href="index.html" class="aside-link label-medium">
+                        <i class="fa-solid fa-house-chimney icon"></i>
+                        home
+                    </a>
+                </li>
+                
+                <li class="aside-item">
+                    <a href="search-genre.html" class="aside-link label-medium">
+                        <i class="fa-solid fa-magnifying-glass icon"></i>
+                        search
+                    </a>
+                </li>
+
+                <li class="aside-item">
+                    <button class="aside-link label-medium" data-open-back-drop>
+                        <i class="fa-solid fa-filter icon"></i>
+                        genres
+                        <i class="fa-solid fa-chevron-down arrow-icon" data-arrow-icon></i>
+                    </button>
+
+                    <div class="back-drop-list" data-back-drop-list data-genre-list></div>
+                </li>
+
+                <li class="aside-item">
+                    <button class="aside-link label-medium" data-open-back-drop>
+                        <i class="fa-regular fa-calendar-days icon"></i>
+                        years
+                        <i class="fa-solid fa-chevron-down arrow-icon" data-arrow-icon></i>
+                    </button>
+
+                    <div class="back-drop-list" data-back-drop-list data-year-list></div>
+                </li>
+
+                <li class="aside-item">
+                    <a href="all-movise.html" class="aside-link label-medium">
+                        <i class="fa-solid fa-video icon"></i>
+                        all movise
+                    </a>
+                </li>
+
+                <li class="aside-item">
+                    <a href="saved-movise.html" class="aside-link label-medium">
+                        <i class="fa-solid fa-heart icon"></i>
+                        saved movise
+                    </a>
+                </li>
+            </ul>
+
+            <div class="aside-social-list">
+                <a target="_blank" href="https://www.linkedin.com/in/mohamed-yasser-2706252aa/" rel='noopener noreferrer' class="social-link label-large">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a target="_blank" href="https://wa.me/message/YEX6SYAH54GFC1" rel='noopener noreferrer' class="social-link label-large">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a target="_blank" href="https://www.instagram.com/the_artists_web" rel='noopener noreferrer' class="social-link label-large">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                
+                <a target="_blank" href="https://www.youtube.com/@theartistweb" rel='noopener noreferrer' class="social-link label-large">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100013677881896" rel='noopener noreferrer' class="social-link label-large">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+            </div>
+        </aside>
+
+        <main class="main">
+            <article>
+                <!-- #BODY SEARCH HOME -->
+                <div class="body-search-home">
+                    <div class="search-body">
+                        <p class="text label-large">Everything you want you will find here</p>
+                        <h1 class="title display-large">search movise</h1>
+
+                        <!-- #HEADER GENRE -->
+                        <div class="header-genre">
+                            <input type="text" placeholder="Search" class="search-keyword label-medium" data-search-keyword>
+                            
+                            <ul class="header-genre-list">
+                                <li class="header-genre-items">
+                                    <button class="btn-header-genre label-medium" data-btn-genre><span>genres</span> <i class="fa-solid fa-chevron-down"></i></button>
+
+                                    <div class="back-drop-list" data-genre-search-movise-list></div>
+                                </li>
+
+                                <li class="header-genre-items">
+                                    <button class="btn-header-genre label-medium" data-btn-year><span>years</span> <i class="fa-solid fa-chevron-down"></i></button>
+
+                                    <div class="back-drop-list" data-years-search-movise-list></div>
+                                </li>
+                            </ul>
+
+                            <button class="btn-primary label-medium" data-btn-filter><i class="fa-solid fa-filter"></i> filter</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- #ALL MOVISE LIST -->
+                <section class="all-movise section">
+                    <div class="container">
+                        <div class="all-movise-list" data-search-movise-list></div>
+                    </div>
+                </section>
+            </article>
+        </main>
+
+        <!-- #FOOTER -->
+        <footer class="footer">
+            <p class="copyright label-small">Copyright (c) 2024 Mohamed Yasser</p>
+
+            <div class="social-list">
+                <a target="_blank" href="https://www.linkedin.com/in/mohamed-yasser-2706252aa/" rel='noopener noreferrer' class="social-link">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a target="_blank" href="https://wa.me/message/YEX6SYAH54GFC1" rel='noopener noreferrer' class="social-link">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a target="_blank" href="https://www.instagram.com/the_artists_web" rel='noopener noreferrer' class="social-link">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                
+                <a target="_blank" href="https://www.youtube.com/@theartistweb" rel='noopener noreferrer' class="social-link">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100013677881896" rel='noopener noreferrer' class="social-link">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+            </div>
+        </footer>
+
+        <!-- custom js link -->
+        <script src="./src/components.js"></script>
+        <script src="./src/search-movise.js"></script>
+    </body>
+</html>
